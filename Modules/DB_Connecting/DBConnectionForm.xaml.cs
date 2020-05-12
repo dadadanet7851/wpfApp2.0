@@ -2,7 +2,7 @@
 using System.Windows;
 using System.Windows.Media;
 
-namespace practic_2020 // Я УБРАЛ СООБЩЕНИЕ О ЗАПОЛНЕННОСТИ ПОЛЕЙ ЮЗЕРНЕЙМ И ПАРОЛЬ
+namespace practic_2020
 {
 
     public partial class DBConnectionForm : Window
@@ -45,16 +45,16 @@ namespace practic_2020 // Я УБРАЛ СООБЩЕНИЕ О ЗАПОЛНЕНН
                 MessageBox.Show("Заполните поле", "Ошибка", MessageBoxButton.OK);
                 return;
             }
-            // if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(database))
-            // {
-            //    MessageBox.Show("Заполните поле", "Ошибка", MessageBoxButton.OK);
-            //    return;
-            //}
-            //if (string.IsNullOrEmpty(userpass) || string.IsNullOrEmpty(database))
-            //{
-            //MessageBox.Show("Заполните поле", "Ошибка", MessageBoxButton.OK);
-            //return;
-            //}
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(database))
+            {
+                MessageBox.Show("Заполните поле", "Ошибка", MessageBoxButton.OK);
+                return;
+            }
+            if (string.IsNullOrEmpty(userpass) || string.IsNullOrEmpty(database))
+            {
+                MessageBox.Show("Заполните поле", "Ошибка", MessageBoxButton.OK);
+                return;
+            }
             if
                 (DBConnectionService.DBConnectionService.SetSqlConnection(GetDBConnectionString(datasource, database, username, userpass)))
             {

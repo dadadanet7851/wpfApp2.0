@@ -74,7 +74,7 @@ namespace practic_2020
             var information = new StringBuilder();
             information.AppendLine("Выполнили:");
             information.AppendLine("Саетягфаров Э.С");
-            information.AppendLine("Гиндуллин А.И.");
+            information.AppendLine("...");
             information.AppendLine("Группа 9ИСП-391к-17");
             information.AppendLine("Проверяют");
             information.AppendLine("Кашина.М.А");
