@@ -19,41 +19,47 @@
                 <MenuItem  Click="Button_Click_exit" Header="Выход" ></MenuItem>
             </MenuItem>
             <MenuItem Header="Работа с базой" Width="99">
-                <MenuItem Header="Аренда">
+                <MenuItem Header="Сделки">
+                    <MenuItem Header="Просмотр"></MenuItem>
+                    <MenuItem Header="Добавить"></MenuItem>
+                    <MenuItem Header="Удалить"></MenuItem>
+                    <MenuItem Header="Изменить"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Агенты бюро">
+                    <MenuItem Header="Просмотр"></MenuItem>
+                    <MenuItem Header="Добавить"></MenuItem>
+                    <MenuItem Header="Удалить"></MenuItem>
+                    <MenuItem Header="Изменить"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Вакансии">
+                    <MenuItem Header="Просмотр"></MenuItem>
+                    <MenuItem Header="Добавить"></MenuItem>
+                    <MenuItem Header="Удалить"></MenuItem>
+                    <MenuItem Header="Изменить"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Соискатели">
+                    <MenuItem Header="Просмотр"></MenuItem>
+                    <MenuItem Header="Добавить"></MenuItem>
+                    <MenuItem Header="Удалить"></MenuItem>
+                    <MenuItem Header="Изменить"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Должности">
+                    <MenuItem Header="Просмотр"></MenuItem>
+                    <MenuItem Header="Добавить"></MenuItem>
+                    <MenuItem Header="Удалить"></MenuItem>
+                    <MenuItem Header="Изменить"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Работодатели">
+                    <MenuItem Header="Просмотр"></MenuItem>
+                    <MenuItem Header="Добавить"></MenuItem>
+                    <MenuItem Header="Удалить"></MenuItem>
+                    <MenuItem Header="Изменить"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Вид деятельности">
                     <MenuItem Click="Arenda_View" Header="Просмотр"></MenuItem>
                     <MenuItem Header="Добавить"></MenuItem>
                     <MenuItem Header="Удалить"></MenuItem>
                     <MenuItem Header="Изменить"></MenuItem>
-                </MenuItem>
-                <MenuItem Header="Клиенты">
-                    <MenuItem Header="Просмотр"></MenuItem>
-                    <MenuItem Header="Добавить"></MenuItem>
-                    <MenuItem Header="Удалить"></MenuItem>
-                    <MenuItem Header="Изменить"></MenuItem>
-                </MenuItem>
-                <MenuItem Header="Магазин">
-                    <MenuItem Header="Просмотр"></MenuItem>
-                    <MenuItem Header="Добавить"></MenuItem>
-                    <MenuItem Header="Удалить"></MenuItem>
-                    <MenuItem Header="Изменить"></MenuItem>
-                </MenuItem>
-                <MenuItem Header="Магазины клиента">
-                    <MenuItem Header="Просмотр"></MenuItem>
-                </MenuItem>
-                <MenuItem Header="Специализация магазина">
-                    <MenuItem Header="Просмотр"></MenuItem>
-                    <MenuItem Header="Добавить"></MenuItem>
-                    <MenuItem Header="Удалить"></MenuItem>
-                    <MenuItem Header="Изменить"></MenuItem>
-                </MenuItem>
-                <MenuItem Header="Торговые точки">
-                    <MenuItem Header="Просмотр"></MenuItem>
-                    <MenuItem Header="Добавить"></MenuItem>
-                    <MenuItem Header="Удалить"></MenuItem>
-                    <MenuItem Header="Изменить"></MenuItem>
-                </MenuItem>
-                <MenuItem Header="Ключи">
-                    <MenuItem Header="Просмотр"></MenuItem>
                 </MenuItem>
                 <MenuItem Header="Запросы">
                     <MenuItem Header="Запрос1"></MenuItem>
