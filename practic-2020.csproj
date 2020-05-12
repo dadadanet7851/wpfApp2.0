@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>practic_2020</RootNamespace>
+    <UseWPF>true</UseWPF>
+    <StartupObject>practic_2020.App</StartupObject>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="123.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resorse\MP3_Player\6.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DocumentFormat.OpenXml" Version="2.10.1" />
+    <PackageReference Include="NLog" Version="4.7.0" />
+    <PackageReference Include="NLog.Config" Version="4.7.0" />
+    <PackageReference Include="NLog.Schema" Version="4.7.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.1" />
+    <PackageReference Include="System.Diagnostics.DiagnosticSource" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="DBConnectionService">
+      <HintPath>DLL\DBConnectionService.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>DLL\NLog.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Modules\DB_Connecting\Table\Edit\" />
+    <Folder Include="Modules\DB_Connecting\Table\Add\" />
+    <Folder Include="Modules\DB_Connecting\Table\Delete\" />
+    <Folder Include="Modules\DB_Connecting\Table\View\" />
+  </ItemGroup>
+
+</Project>

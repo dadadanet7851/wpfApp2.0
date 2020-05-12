@@ -1,0 +1,50 @@
+﻿<Window x:Class="practic_2020.MP3_Player"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:practic_2020"
+        mc:Ignorable="d"
+        Title="MP3_Player" Height="415" Width="466">
+    <Window.Background>
+        <ImageBrush ImageSource="/Resorse/MP3_Player/6.jpg"/>
+    </Window.Background>
+    <Grid Margin="0,9,0,14">
+
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom"
+                    HorizontalAlignment="Left" Margin="74,0,0,330">
+            <TextBlock Foreground="White" Text="Имя файла:"/>
+            <TextBox x:Name="FileName" Width="242" Cursor="None"/>
+            <Button ToolTip="Помогает выбрать файл" Content="Open" Click="Button_ClickOpen" Margin="10,0,0,0"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top"
+                    HorizontalAlignment="Center" Margin="0,314,0,0" Height="49" Width="390">
+            <Button Content="Play" ToolTip="Воспроизвести" Width="80" Height="22" Margin="10" Click="Play"></Button>
+            <Button Content="Pause" ToolTip="Пауза" Width="80" Height="22" Margin="10" Click="Pause"></Button>
+            <Button Content="Stop" ToolTip="Остановить" Width="80" Height="22" Click="Stop"/>
+            <Button Content="Collapse" ToolTip="Свернуть" Width="80" Height="22" Margin="10" Click="visible"></Button>
+        </StackPanel>
+        <Button
+            HorizontalAlignment="Left" Width="39" Height="25" Margin="21,10,0,0" VerticalAlignment="Top" Click="Close_Module" Content="✪"></Button>
+        <Slider HorizontalAlignment="Left" Margin="364,265,0,0" VerticalAlignment="Top" Width="120" Value="1" RenderTransformOrigin="0.5,0.5">
+            <Slider.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90.304"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Slider.RenderTransform>
+        </Slider>
+        <Slider HorizontalAlignment="Left" Margin="20,296,0,0" VerticalAlignment="Top" Width="386" RenderTransformOrigin="0.5,0.5">
+            <Slider.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.015"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Slider.RenderTransform>
+        </Slider>
+    </Grid>
+</Window>

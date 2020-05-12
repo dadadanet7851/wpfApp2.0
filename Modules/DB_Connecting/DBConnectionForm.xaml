@@ -1,0 +1,27 @@
+﻿<Window x:Class="practic_2020.DBConnectionForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:practic_2020"
+        mc:Ignorable="d"
+        WindowStyle="None" 
+        Title= "Подключение к базе данных..." Height= "350" Width= "350"
+        AllowsTransparency= "True" Background= "Transparent" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Border   CornerRadius="20" BorderBrush="#FFFFFF" BorderThickness="5" Background="Pink">
+        <Grid Margin="10,10,10,9">
+            <Separator Background="#FFFFFF" Margin="58,-99,58,103"></Separator>
+            <Label Foreground="Black" Content="Название сервера" MouseDoubleClick="Notebook_1" HorizontalAlignment="Left" Margin="58,49,0,0" VerticalAlignment="Top" Width="111"/>
+            <Label Foreground="Black" Content="Название DB" MouseDoubleClick="Notebook_2" HorizontalAlignment="Left" Margin="58,101,0,0" VerticalAlignment="Top" Width="81"/>
+            <Label Foreground="Black"  Content="Логин" HorizontalAlignment="Left" Margin="58,146,0,0" VerticalAlignment="Top" Width="129"/>
+            <Label Foreground="Black" Content="Пароль" HorizontalAlignment="Left" Margin="58,194,0,0" VerticalAlignment="Top" Width="51"/>
+            <TextBox x:Name="Server_name_box" Background="Pink" HorizontalAlignment="Center" Margin="0,75,0,0" Text="..." TextWrapping="Wrap" VerticalAlignment="Top" Width="204" Height="26" TextChanged="Name_Server_Box_TextChanged"/>
+            <TextBox x:Name="Name_DB_Box" Background="Pink" HorizontalAlignment="Center" Margin="0,127,0,0" Text="..." TextWrapping="Wrap" VerticalAlignment="Top" Width="204"/>
+            <TextBox x:Name="User_Name_Box" Background="Pink" HorizontalAlignment="Center" Margin="0,172,0,0" Text="..." TextWrapping="Wrap" VerticalAlignment="Top" Width="204"/>
+            <TextBox x:Name="User_Password_Box" Background="Pink" HorizontalAlignment="Center" Margin="0,220,0,0" Text="..." TextWrapping="Wrap" VerticalAlignment="Top" Width="204"/>
+            <Button Content="Go" Background="Pink" Foreground="Black" HorizontalAlignment="Center" Margin="0,247,0,0" VerticalAlignment="Top" Height="25" Width="85" Click="Button_Click_1"/>
+            <Label Content="Welcome!" Foreground="White" FontSize="25"  HorizontalAlignment="Center" VerticalAlignment="Top" Width="119" Margin="0,1,0,0"/>
+
+        </Grid>
+    </Border>
+</Window>

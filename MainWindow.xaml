@@ -1,0 +1,73 @@
+﻿<Window x:Class="practic_2020.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:practic_2020"
+        mc:Ignorable="d"
+        Title="Logger"  Width="800" Height="600" >
+    <Grid  Margin="10,10,10,-6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="83*"/>
+            <ColumnDefinition Width="697*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="569*"/>
+        </Grid.RowDefinitions>
+        <Button Content="Очистка" HorizontalAlignment="Left" Margin="237,485,0,0" VerticalAlignment="Top" Height="30" Width="100" FontFamily="Tahoma" FontSize="15" Click="Button_Click_Cl" Grid.Row="1" Grid.Column="1"/>
+
+        <Menu Height="25" VerticalAlignment="Top" Margin="0,-3,0,0" Grid.ColumnSpan="2">
+            <MenuItem Header="Файл">
+                <MenuItem Header="Открыть" >
+                    <MenuItem Click="Button_Click_Op" Header="Файл" ></MenuItem>
+                    <MenuItem Header="Изображение" Click="Button_Click_open_foto" ></MenuItem>
+                </MenuItem>
+                <MenuItem Click="Button_Click_con" Header="Подключиться к БД" ></MenuItem>
+                <MenuItem Click="Button_Click_Mp" Header="Плеер">
+                    <MenuItem.Icon>
+                        <Image Source="/Resorse/MP3_Player/6.png"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Click="Button_Click_exit" Header="Выход" ></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Настройки">
+                <MenuItem Header="Дизайн" >
+                    <MenuItem Header="Изменить фон" Click="Edit_Fon"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Изменить разрешение" >
+                    <ComboBox  Height="20" Width="100" ToolTip="" >
+                        <ComboBoxItem Content="320x240" Selected="Setting_size_1" Width="168"></ComboBoxItem>
+                        <ComboBoxItem Content="640×360" Selected="Setting_size_2"/>
+                        <ComboBoxItem Content="960×540" Selected="Setting_size_3"/>
+                        <ComboBoxItem Content="1280×720" Selected="Setting_size_4"/>
+                        <ComboBoxItem Content="1366×768" Selected="Setting_size_5"/>
+                        <ComboBoxItem Content="1600×900" Selected="Setting_size_6"/>
+                        <ComboBoxItem Content="1680×1050" Selected="Setting_size_7"/>
+                        <ComboBoxItem Content="1920×1080" Selected="Setting_size_8"/>
+                    </ComboBox>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Информация">
+                <MenuItem Header="Подробнее..." Click="Button_Click_avtor">
+                </MenuItem>
+                <MenuItem Header="GitHub">
+                    <TextBlock RenderTransformOrigin="0.5,0.5" Height="20" Width="100">
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="0.319"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform><Hyperlink NavigateUri="https://github.com/Emil1001" Click="Site"><Run Text="Открыть в google"/></Hyperlink></TextBlock>
+                </MenuItem>
+
+            </MenuItem>
+            <DocumentViewer/>
+
+        </Menu>
+        <StackPanel Name="stackPanelAdd" Margin="15,174,138,95" Grid.Row="1" Grid.Column="1" />
+
+    </Grid>
+</Window>
