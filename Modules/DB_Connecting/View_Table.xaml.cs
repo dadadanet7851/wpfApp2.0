@@ -58,8 +58,6 @@ namespace practic_2020
         private void Arenda_View(object sender, RoutedEventArgs e)
         {
 
-           
         }
-
     }
 }
