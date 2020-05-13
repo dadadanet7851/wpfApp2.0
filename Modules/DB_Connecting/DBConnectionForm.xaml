@@ -19,8 +19,9 @@
             <TextBox x:Name="Name_DB_Box" Background="Pink" HorizontalAlignment="Center" Margin="0,127,0,0" Text="..." TextWrapping="Wrap" VerticalAlignment="Top" Width="204"/>
             <TextBox x:Name="User_Name_Box" Background="Pink" HorizontalAlignment="Center" Margin="0,172,0,0" Text="..." TextWrapping="Wrap" VerticalAlignment="Top" Width="204"/>
             <TextBox x:Name="User_Password_Box" Background="Pink" HorizontalAlignment="Center" Margin="0,220,0,0" Text="..." TextWrapping="Wrap" VerticalAlignment="Top" Width="204"/>
-            <Button Content="Go" Background="Pink" Foreground="Black" HorizontalAlignment="Center" Margin="0,247,0,0" VerticalAlignment="Top" Height="25" Width="85" Click="Button_Click_1"/>
+            <Button Content="Go" Background="Pink" Foreground="Black" HorizontalAlignment="Left" Margin="58,247,0,0" VerticalAlignment="Top" Height="25" Width="85" Click="Button_Click_1"/>
             <Label Content="Welcome!" Foreground="White" FontSize="25"  HorizontalAlignment="Center" VerticalAlignment="Top" Width="119" Margin="0,1,0,0"/>
+            <Button Content="Back" Background="Pink" Foreground="Black" HorizontalAlignment="Left" Margin="177,247,0,0" VerticalAlignment="Top" Height="25" Width="85" Click="Button_Click_exit"/>
 
         </Grid>
     </Border>

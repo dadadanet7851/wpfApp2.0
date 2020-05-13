@@ -1,4 +1,5 @@
 ﻿using DocumentFormat.OpenXml.Drawing.Charts;
+using System;
 using System.Windows;
 using System.Windows.Media;
 
@@ -28,6 +29,13 @@ namespace practic_2020 // Я УБРАЛ СООБЩЕНИЕ О ЗАПОЛНЕНН
             User_Password_Box.Text = "...";
         }
 
+        private void Button_Click_exit(object sender, EventArgs e)
+        {
+            this.Hide();
+            MainWindow frm = new MainWindow();
+            frm.Owner = this;
+            frm.Show();
+        }
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             string datasource = Server_name_box.Text;
@@ -86,4 +94,5 @@ namespace practic_2020 // Я УБРАЛ СООБЩЕНИЕ О ЗАПОЛНЕНН
 
         }
     }
+
 }
