@@ -15,7 +15,7 @@
             <RowDefinition Height="29*"/>
             <RowDefinition Height="569*"/>
         </Grid.RowDefinitions>
-        <Button Content="Очистка" HorizontalAlignment="Left" Margin="237,485,0,0" VerticalAlignment="Top" Height="30" Width="100" FontFamily="Tahoma" FontSize="15" Click="Button_Click_Cl" Grid.Row="1" Grid.Column="1"/>
+        <Button Content="Очистка" HorizontalAlignment="Left" Margin="241,484,0,0" VerticalAlignment="Top" Height="30" Width="100" FontFamily="Tahoma" FontSize="15" Click="Button_Click_Cl" Grid.Row="1" Grid.Column="1"/>
 
         <Menu Height="25" VerticalAlignment="Top" Margin="0,-3,0,0" Grid.ColumnSpan="2">
             <MenuItem Header="Файл">
